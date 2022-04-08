@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.reddit_clone">
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- Add this for real device internet connection -->
    <application
         android:label="Reddit Clone"
         android:name="${applicationName}"
