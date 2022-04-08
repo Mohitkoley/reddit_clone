@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Column(
                           children: [
                             SizedBox(
-                              height: Get.height * 0.75,
+                              height: Get.height * 0.70,
                               child: ListView.builder(
                                 itemCount:
                                     _postDataController.postsModel.length,
@@ -174,7 +174,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 .data!
                                                 .children![i]
                                                 .data!
-                                                .num_Comments
+                                                .numComments
                                                 .toString()),
                                             const Icon(Icons.share),
                                             const Text('Share'),

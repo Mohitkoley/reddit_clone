@@ -62,7 +62,7 @@ class ChildData {
     this.thumbnail,
     this.likes,
     this.allAwardings,
-    this.num_Comments,
+    this.numComments,
   });
 
   String? subreddit;
@@ -73,7 +73,7 @@ class ChildData {
   String? thumbnail;
   dynamic likes;
   List<AllAwarding>? allAwardings;
-  int? num_Comments;
+  int? numComments;
 
   factory ChildData.fromJson(Map<String, dynamic> json) => ChildData(
         subreddit: json["subreddit"],
@@ -85,7 +85,7 @@ class ChildData {
         likes: json["likes"],
         allAwardings: List<AllAwarding>.from(
             json["all_awardings"].map((x) => AllAwarding.fromJson(x))),
-        num_Comments: json["num_comments"],
+        numComments: json["num_comments"],
       );
 }
 
